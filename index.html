@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<script src="./image-slot.js"></script>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#F3F1EA;color:#0F2740;font-family:"Familjen Grotesk",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#1B4F82;text-decoration:none}
+a:hover{color:#0F2740}
+@keyframes squish{0%,100%{transform:rotate(-1.4deg) scale(1)}50%{transform:rotate(1.2deg) scale(1.03)}}
+@keyframes drift{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+</style>
+</helmet>
+
+<div style="background:#F3F1EA;overflow:hidden">
+
+  <header style="position:sticky;top:0;z-index:30;background:rgba(243,241,234,.9);backdrop-filter:blur(12px)">
+    <div style="max-width:1240px;margin:0 auto;padding:16px 40px;display:flex;align-items:center;gap:32px;border-bottom:1px solid rgba(15,39,64,.14)">
+      <span style="font-family:'Instrument Serif',Georgia,serif;font-size:23px;letter-spacing:-.01em;flex:none">Italiano <em style="font-style:italic;color:#1B4F82">sul divano</em></span>
+      <nav style="display:flex;gap:26px;margin-left:auto;font-size:15px;letter-spacing:.01em">
+        <a href="#about">About me</a>
+        <a href="#how">How it works</a>
+        <a href="#who">Who it's for</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a href="#book" style="position:relative;flex:none;background:#2F7D5C;color:#F6F4EE;font-size:14px;font-weight:500;padding:12px 22px;border-radius:24px 24px 24px 24px / 19px;transform:rotate(-1.2deg);box-shadow:0 3px 0 rgba(21,72,52,.85),inset 0 -6px 12px rgba(21,72,52,.25)" style-hover="animation:squish .7s ease-in-out infinite">
+        Book a free trial
+        <span style="position:absolute;top:-3px;left:9px;width:8px;height:8px;border-radius:50%;background:#2F7D5C"></span>
+        <span style="position:absolute;top:-3px;right:9px;width:8px;height:8px;border-radius:50%;background:#2F7D5C"></span>
+      </a>
+    </div>
+  </header>
+
+  <section style="position:relative;max-width:1240px;margin:0 auto;padding:72px 40px 40px">
+    <div style="display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:48px;align-items:start">
+      <div>
+        <p style="margin:0 0 26px;font-size:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#7A8798">Private online Italian lessons</p>
+        <h1 style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:104px;line-height:.9;letter-spacing:-.03em">Italiano<br><em style="font-style:italic;color:#1B4F82;margin-left:.08em">sul divano</em></h1>
+        <p style="margin:30px 0 0;font-family:'Instrument Serif',Georgia,serif;font-size:31px;line-height:1.32;max-width:30ch;color:#26445F">Personalised Italian lessons, taught with the comfort of a conversation and the care of a good teacher.</p>
+        <div style="display:flex;align-items:center;gap:26px;margin-top:44px;flex-wrap:wrap">
+          <a href="#book" style="position:relative;background:#2F7D5C;color:#F6F4EE;font-size:19px;font-weight:500;padding:22px 40px;border-radius:38px 38px 38px 38px / 30px;transform:rotate(-1.6deg);box-shadow:0 6px 0 rgba(21,72,52,.85),inset 0 -10px 20px rgba(21,72,52,.22)" style-hover="animation:squish .8s ease-in-out infinite">
+            Book a free trial lesson
+            <span style="position:absolute;top:-5px;left:16px;width:14px;height:14px;border-radius:50%;background:#2F7D5C"></span>
+            <span style="position:absolute;top:-5px;right:16px;width:14px;height:14px;border-radius:50%;background:#2F7D5C"></span>
+            <span style="position:absolute;bottom:-5px;left:16px;width:14px;height:14px;border-radius:50%;background:#2F7D5C"></span>
+            <span style="position:absolute;bottom:-5px;right:16px;width:14px;height:14px;border-radius:50%;background:#2F7D5C"></span>
+          </a>
+          <p style="margin:0;font-size:15px;line-height:1.4;color:#7A8798;max-width:17ch">Thirty minutes, no card, no obligation.</p>
+        </div>
+      </div>
+
+      <div style="position:relative;padding-top:12px">
+        <div style="position:relative;height:330px;transform:rotate(2deg);border-radius:6px;overflow:hidden;box-shadow:0 18px 40px -22px rgba(15,39,64,.5)">
+          <image-slot id="v2-hero" shape="rect" placeholder="A sofa, a bench, a beach — wherever the lesson happens"></image-slot>
+        </div>
+        <span style="position:absolute;top:-14px;left:-46px;transform:rotate(-6deg);background:#0F2740;color:#F3F1EA;font-size:13px;padding:6px 13px;border-radius:14px;animation:drift 6s ease-in-out infinite">your own sofa</span>
+        <span style="position:absolute;bottom:44px;left:-72px;transform:rotate(3deg);background:#C9DCEB;color:#0F2740;font-size:13px;padding:6px 13px;border-radius:14px;animation:drift 7.5s ease-in-out infinite">a friend's sofa</span>
+        <span style="position:absolute;bottom:-16px;right:22px;transform:rotate(-3deg);background:#1B4F82;color:#F3F1EA;font-size:13px;padding:6px 13px;border-radius:14px;animation:drift 6.8s ease-in-out infinite">a bench in the park</span>
+        <span style="position:absolute;bottom:-42px;left:34px;transform:rotate(4deg);background:#F6F4EE;color:#1B4F82;font-size:13px;padding:6px 13px;border-radius:14px;border:1px solid rgba(27,79,130,.3);animation:drift 8.2s ease-in-out infinite">an empty beach</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" style="max-width:1240px;margin:0 auto;padding:80px 40px 88px">
+    <div style="display:grid;grid-template-columns:minmax(0,.42fr) minmax(0,.58fr);gap:64px;align-items:start;border-top:1px solid rgba(15,39,64,.14);padding-top:52px">
+      <div>
+        <div style="position:relative;width:82%;transform:rotate(-2.5deg)">
+          <div style="height:300px;border-radius:6px;overflow:hidden;box-shadow:0 16px 34px -20px rgba(15,39,64,.45)">
+            <image-slot id="v2-portrait" shape="rect" placeholder="Portrait"></image-slot>
+          </div>
+        </div>
+        <p style="margin:28px 0 0;font-family:'Instrument Serif',Georgia,serif;font-style:italic;font-size:26px;line-height:1.3;color:#1B4F82;max-width:22ch">Make yourself comfortable. Italian isn't a language you can learn badly, in a hurry.</p>
+      </div>
+      <div style="padding-top:6px">
+        <p style="margin:0 0 22px;font-size:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#7A8798">The project</p>
+        <p style="margin:0;font-size:23px;line-height:1.55;max-width:52ch;text-wrap:pretty">Italiano sul divano started on my own sofa, with a laptop and a handful of students. Then I began travelling, and the work came with me. That turned out to be the whole idea: the lesson happens wherever you are comfortable.</p>
+        <p style="margin:20px 0 0;font-size:23px;line-height:1.55;max-width:52ch;text-wrap:pretty">On the sofa at home, on your friend's, on a bench in the park, on an empty beach. The place is yours, and so is the lesson. Nothing off a shelf: an hour built for you, your reasons for learning, and the pace that actually suits you.</p>
+        <div style="display:flex;gap:26px;margin-top:30px;flex-wrap:wrap;font-size:17px">
+          <a href="#about-page" style="border-bottom:1px solid rgba(27,79,130,.35);padding-bottom:2px">More about me →</a>
+          <a href="#project-page" style="border-bottom:1px solid rgba(27,79,130,.35);padding-bottom:2px">More about the project →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" style="background:#0F2740;color:#F3F1EA">
+    <div style="max-width:1240px;margin:0 auto;padding:84px 40px 92px">
+      <h2 style="margin:0 0 56px;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:56px;letter-spacing:-.02em">How it <em style="font-style:italic;color:#9CC4E4">works</em></h2>
+
+      <div style="display:flex;gap:34px;align-items:flex-start;padding-bottom:38px;border-bottom:1px solid rgba(243,241,234,.16)">
+        <span style="font-family:'Instrument Serif',Georgia,serif;font-size:64px;line-height:.8;color:#5C87AE;flex:none;width:76px">1</span>
+        <p style="margin:0;font-size:29px;line-height:1.42;max-width:34ch"><strong style="font-weight:600">Click the friendly green button</strong> you'll find lying around. It's only there to get your attention.</p>
+        <a href="#book" style="position:relative;margin-left:auto;flex:none;background:#2F7D5C;color:#F6F4EE;font-size:17px;font-weight:500;padding:19px 32px;border-radius:34px 34px 34px 34px / 27px;transform:rotate(2deg);box-shadow:0 5px 0 rgba(15,53,38,.9),inset 0 -9px 18px rgba(15,53,38,.25)" style-hover="animation:squish .8s ease-in-out infinite">
+          Book a free trial lesson
+          <span style="position:absolute;top:-4px;left:14px;width:12px;height:12px;border-radius:50%;background:#2F7D5C"></span>
+          <span style="position:absolute;top:-4px;right:14px;width:12px;height:12px;border-radius:50%;background:#2F7D5C"></span>
+          <span style="position:absolute;bottom:-4px;left:14px;width:12px;height:12px;border-radius:50%;background:#2F7D5C"></span>
+          <span style="position:absolute;bottom:-4px;right:14px;width:12px;height:12px;border-radius:50%;background:#2F7D5C"></span>
+        </a>
+      </div>
+
+      <div style="display:flex;gap:34px;align-items:baseline;padding:38px 0;border-bottom:1px solid rgba(243,241,234,.16);margin-left:64px">
+        <span style="font-family:'Instrument Serif',Georgia,serif;font-size:64px;line-height:.8;color:#5C87AE;flex:none;width:76px">2</span>
+        <p style="margin:0;font-size:29px;line-height:1.42;max-width:34ch"><strong style="font-weight:600">Create your student profile.</strong></p>
+      </div>
+
+      <div style="display:flex;gap:34px;align-items:baseline;padding:38px 0;border-bottom:1px solid rgba(243,241,234,.16);margin-left:128px">
+        <span style="font-family:'Instrument Serif',Georgia,serif;font-size:64px;line-height:.8;color:#5C87AE;flex:none;width:76px">3</span>
+        <p style="margin:0;font-size:29px;line-height:1.42;max-width:34ch"><strong style="font-weight:600">Book your free trial for real</strong>, on the calendar.</p>
+      </div>
+
+      <div style="display:flex;gap:34px;align-items:baseline;padding:38px 0 0;margin-left:192px">
+        <span style="font-family:'Instrument Serif',Georgia,serif;font-size:64px;line-height:.8;color:#5C87AE;flex:none;width:76px">4</span>
+        <p style="margin:0;font-size:29px;line-height:1.42;max-width:34ch">If you're happy with it, <strong style="font-weight:600">start your journey with Italiano sul divano.</strong></p>
+      </div>
+
+      <p style="margin:52px 0 0;font-size:17px;color:rgba(243,241,234,.6)">Scheduling, cancelling, paying — <a href="#faq" style="color:#9CC4E4;border-bottom:1px solid rgba(156,196,228,.4)">it's answered in the FAQ →</a></p>
+    </div>
+  </section>
+
+  <section id="who" style="max-width:1240px;margin:0 auto;padding:92px 40px 84px">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:40px;flex-wrap:wrap;margin-bottom:52px">
+      <h2 style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:56px;letter-spacing:-.02em;max-width:20ch">Who ends up <em style="font-style:italic;color:#1B4F82">on the sofa</em></h2>
+      <p style="margin:0;font-size:19px;line-height:1.5;color:#7A8798;max-width:32ch">Six-year-olds and seventy-year-olds, one at a time or four at once. The lesson bends around the person.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:rgba(15,39,64,.14);border-top:1px solid rgba(15,39,64,.14);border-bottom:1px solid rgba(15,39,64,.14)">
+      <div style="background:#F3F1EA;padding:34px 30px 34px 0">
+        <p style="margin:0 0 20px;font-size:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#7A8798">Ages</p>
+        <div style="display:flex;flex-direction:column;gap:11px;font-family:'Instrument Serif',Georgia,serif;font-size:27px;line-height:1.15;color:#0F2740">
+          <span>Children</span>
+          <span>Teenagers</span>
+          <span>Adults</span>
+          <span style="color:#1B4F82;font-style:italic">Anyone taking their time</span>
+        </div>
+      </div>
+      <div style="background:#F3F1EA;padding:34px 30px">
+        <p style="margin:0 0 20px;font-size:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#7A8798">Together or alone</p>
+        <div style="display:flex;flex-direction:column;gap:11px;font-family:'Instrument Serif',Georgia,serif;font-size:27px;line-height:1.15;color:#0F2740">
+          <span>One to one</span>
+          <span style="color:#1B4F82;font-style:italic">Couples</span>
+          <span>Parents and children</span>
+          <span>Small groups</span>
+          <span>Professionals</span>
+        </div>
+      </div>
+      <div style="background:#F3F1EA;padding:34px 0 34px 30px">
+        <p style="margin:0 0 20px;font-size:12px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:#7A8798">Reasons</p>
+        <div style="display:flex;flex-direction:column;gap:11px;font-family:'Instrument Serif',Georgia,serif;font-size:27px;line-height:1.15;color:#0F2740">
+          <span>Starting from nothing</span>
+          <span style="color:#1B4F82;font-style:italic">Every level, A1 to C2</span>
+          <span>CILS and CELI exams</span>
+          <span>Citizenship B1</span>
+          <span>Family, work, or love of it</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:flex;align-items:center;gap:28px;margin-top:34px;flex-wrap:wrap">
+      <p style="margin:0;font-size:17px;color:#7A8798">Not sure where you fit? <a href="#faq" style="border-bottom:1px solid rgba(27,79,130,.35)">Most of it is in the FAQ →</a></p>
+    </div>
+  </section>
+
+  <section id="reviews" style="max-width:1240px;margin:0 auto;padding:0 40px 96px">
+    <div style="border-top:1px solid rgba(15,39,64,.14);padding-top:56px">
+      <h2 style="margin:0 0 48px;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:56px;letter-spacing:-.02em">In their <em style="font-style:italic;color:#1B4F82">own words</em></h2>
+      <div style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:56px;align-items:start">
+        <div style="transform:rotate(-1.4deg)">
+          <div style="position:relative;height:320px;border-radius:6px;overflow:hidden;box-shadow:0 16px 34px -20px rgba(15,39,64,.45)">
+            <image-slot id="v2-video-1" shape="rect" placeholder="Video testimonial 1"></image-slot>
+            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none">
+              <span style="width:64px;height:64px;border-radius:50%;background:rgba(15,39,64,.66);color:#F3F1EA;display:flex;align-items:center;justify-content:center;font-size:19px;padding-left:4px">▶</span>
+            </div>
+          </div>
+          <p style="margin:18px 0 0;font-size:18px;color:#26445F">Marta, Berlin — from nothing to B1 in nine months</p>
+        </div>
+        <div style="transform:rotate(1.2deg);margin-top:46px">
+          <div style="position:relative;height:320px;border-radius:6px;overflow:hidden;box-shadow:0 16px 34px -20px rgba(15,39,64,.45)">
+            <image-slot id="v2-video-2" shape="rect" placeholder="Video testimonial 2"></image-slot>
+            <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;pointer-events:none">
+              <span style="width:64px;height:64px;border-radius:50%;background:rgba(15,39,64,.66);color:#F3F1EA;display:flex;align-items:center;justify-content:center;font-size:19px;padding-left:4px">▶</span>
+            </div>
+          </div>
+          <p style="margin:18px 0 0;font-size:18px;color:#26445F">Tom &amp; Sofie — two people, one sofa, one lesson</p>
+        </div>
+      </div>
+      <p style="margin:44px 0 0;font-size:17px"><a href="#reviews-page" style="border-bottom:1px solid rgba(27,79,130,.35)">Read all the reviews →</a></p>
+    </div>
+  </section>
+
+  <section id="faq" style="max-width:1240px;margin:0 auto;padding:0 40px 92px">
+    <div style="display:grid;grid-template-columns:minmax(0,.34fr) minmax(0,.66fr);gap:56px;border-top:1px solid rgba(15,39,64,.14);padding-top:56px">
+      <div>
+        <h2 style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:46px;letter-spacing:-.02em;line-height:1.02">Three <em style="font-style:italic;color:#1B4F82">quick ones</em></h2>
+        <a href="#faq-page" style="display:inline-block;margin-top:20px;font-size:17px;border-bottom:1px solid rgba(27,79,130,.35)">All the FAQ →</a>
+      </div>
+      <div>
+        <div style="border-top:1px solid rgba(15,39,64,.14)">
+          <button onClick="{{ toggle0 }}" style="width:100%;background:none;border:0;padding:24px 0;display:flex;gap:24px;align-items:baseline;text-align:left;cursor:pointer;font-family:'Instrument Serif',Georgia,serif;font-size:26px;color:#0F2740" style-hover="color:#1B4F82">
+            <span style="flex:1">Is the trial lesson really free?</span>
+            <span style="font-family:'Familjen Grotesk',sans-serif;font-size:18px;color:#1B4F82">{{ sign0 }}</span>
+          </button>
+          <sc-if value="{{ open0 }}"><p style="margin:0;padding:0 0 26px;font-size:20px;line-height:1.55;color:#26445F;max-width:56ch">Thirty minutes, nothing to pay. We talk, I hear where your Italian is, you decide whether you want to keep going.</p></sc-if>
+        </div>
+        <div style="border-top:1px solid rgba(15,39,64,.14)">
+          <button onClick="{{ toggle1 }}" style="width:100%;background:none;border:0;padding:24px 0;display:flex;gap:24px;align-items:baseline;text-align:left;cursor:pointer;font-family:'Instrument Serif',Georgia,serif;font-size:26px;color:#0F2740" style-hover="color:#1B4F82">
+            <span style="flex:1">What actually happens in a lesson?</span>
+            <span style="font-family:'Familjen Grotesk',sans-serif;font-size:18px;color:#1B4F82">{{ sign1 }}</span>
+          </button>
+          <sc-if value="{{ open1 }}"><p style="margin:0;padding:0 0 26px;font-size:20px;line-height:1.55;color:#26445F;max-width:56ch">Mostly conversation, with grammar arriving when you need it rather than in textbook order. The material comes from real Italian: articles, songs, recipes, the email you have to write on Monday.</p></sc-if>
+        </div>
+        <div style="border-top:1px solid rgba(15,39,64,.14);border-bottom:1px solid rgba(15,39,64,.14)">
+          <button onClick="{{ toggle2 }}" style="width:100%;background:none;border:0;padding:24px 0;display:flex;gap:24px;align-items:baseline;text-align:left;cursor:pointer;font-family:'Instrument Serif',Georgia,serif;font-size:26px;color:#0F2740" style-hover="color:#1B4F82">
+            <span style="flex:1">Can I move a lesson?</span>
+            <span style="font-family:'Familjen Grotesk',sans-serif;font-size:18px;color:#1B4F82">{{ sign2 }}</span>
+          </button>
+          <sc-if value="{{ open2 }}"><p style="margin:0;padding:0 0 26px;font-size:20px;line-height:1.55;color:#26445F;max-width:56ch">Freely, up to 24 hours before. Life is sometimes more sudden than that, so write to me and we'll find another slot.</p></sc-if>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="book" style="max-width:1240px;margin:0 auto;padding:0 40px 104px">
+    <div style="position:relative;background:#1B4F82;color:#F3F1EA;border-radius:10px;padding:76px 56px;overflow:hidden">
+      <h2 style="margin:0;font-family:'Instrument Serif',Georgia,serif;font-weight:400;font-size:58px;line-height:1.04;letter-spacing:-.02em;max-width:24ch;position:relative">Thirty minutes, wherever you're sitting.</h2>
+      <p style="margin:20px 0 40px;font-size:20px;color:rgba(243,241,234,.75);max-width:44ch">Pick a time on the calendar. Nothing to pay, nothing to install, no follow-up you didn't ask for.</p>
+      <a href="#calendar" style="position:relative;display:inline-block;background:#2F7D5C;color:#F6F4EE;font-size:20px;font-weight:500;padding:24px 44px;border-radius:40px 40px 40px 40px / 32px;transform:rotate(-1.8deg);box-shadow:0 6px 0 rgba(15,53,38,.9),inset 0 -11px 22px rgba(15,53,38,.25)" style-hover="animation:squish .8s ease-in-out infinite">
+        Book a free trial lesson
+        <span style="position:absolute;top:-5px;left:18px;width:15px;height:15px;border-radius:50%;background:#2F7D5C"></span>
+        <span style="position:absolute;top:-5px;right:18px;width:15px;height:15px;border-radius:50%;background:#2F7D5C"></span>
+        <span style="position:absolute;bottom:-5px;left:18px;width:15px;height:15px;border-radius:50%;background:#2F7D5C"></span>
+        <span style="position:absolute;bottom:-5px;right:18px;width:15px;height:15px;border-radius:50%;background:#2F7D5C"></span>
+      </a>
+      <span style="position:absolute;right:-90px;bottom:-120px;width:340px;height:340px;border-radius:50%;background:rgba(156,196,228,.16)"></span>
+    </div>
+  </section>
+
+  <footer id="contact" style="background:#0F2740;color:#F3F1EA">
+    <div style="max-width:1240px;margin:0 auto;padding:72px 40px 44px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr);gap:52px">
+      <div>
+        <span style="font-family:'Instrument Serif',Georgia,serif;font-size:26px">Italiano <em style="font-style:italic;color:#9CC4E4">sul divano</em></span>
+        <p style="margin:18px 0 0;font-size:19px;line-height:1.5;color:rgba(243,241,234,.62);max-width:26ch">Private Italian lessons, online, from wherever you're comfortable.</p>
+      </div>
+      <div>
+        <p style="margin:0 0 16px;font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:rgba(243,241,234,.45)">Contact</p>
+        <div style="display:flex;flex-direction:column;gap:9px;font-size:18px">
+          <a href="mailto:ciao@italianosuldivano.it" style="color:#F3F1EA">ciao@italianosuldivano.it</a>
+          <a href="#whatsapp" style="color:#F3F1EA">WhatsApp +39 000 000 0000</a>
+          <a href="#instagram" style="color:#F3F1EA">Instagram</a>
+          <span style="color:rgba(243,241,234,.55)">Replies Mon–Fri, 9–18 CET</span>
+        </div>
+      </div>
+      <div>
+        <p style="margin:0 0 16px;font-size:11px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;color:rgba(243,241,234,.45)">Dati fiscali</p>
+        <div style="display:flex;flex-direction:column;gap:9px;font-size:17px;color:rgba(243,241,234,.55)">
+          <span>Nome Cognome</span>
+          <span>P. IVA 00000000000</span>
+          <span>C.F. XXXXXXXXXXXXXXXX</span>
+          <span>Regime forfettario</span>
+          <span>Via Esempio 1, 00100 Roma (RM), Italy</span>
+        </div>
+      </div>
+    </div>
+    <div style="max-width:1240px;margin:0 auto;padding:22px 40px 44px;display:flex;gap:22px;flex-wrap:wrap;font-size:15px;color:rgba(243,241,234,.42);border-top:1px solid rgba(243,241,234,.14)">
+      <span>© 2026 Italiano sul divano</span>
+      <a href="#privacy" style="color:rgba(243,241,234,.6)">Privacy</a>
+      <a href="#terms" style="color:rgba(243,241,234,.6)">Terms</a>
+      <a href="#cookies" style="color:rgba(243,241,234,.6)">Cookies</a>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;faqStartClosed&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:false,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Behaviour&quot;}}">
+class Component extends DCLogic {
+  state = { open: 0 };
+  componentDidMount() {
+    if (this.props.faqStartClosed) this.setState({ open: -1 });
+  }
+  t(i) { return () => this.setState(s => ({ open: s.open === i ? -1 : i })); }
+  renderVals() {
+    const v = {};
+    for (let i = 0; i < 3; i++) {
+      v["open" + i] = this.state.open === i;
+      v["sign" + i] = this.state.open === i ? "−" : "+";
+      v["toggle" + i] = this.t(i);
+    }
+    return v;
+  }
+}
+</script>
+</body>
+</html>
